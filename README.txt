@@ -1,1 +1,0 @@
-Tesseract comparison mini-study
