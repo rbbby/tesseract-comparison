@@ -1,0 +1,21 @@
+Necessary files:
+- Comparison map contains csv files of gold-standard and OCR text, as well as word accuracy for all text documents
+- real_date.txt contains the id of these files
+- count --> ocr.csv contains paragraph and dark-id connections
+
+Problems:
+- Gold standard is on paragraph level but ocr on textblock level. Paragraphs may coincide with textblocks, but also possible to be a subset of a textblock or split between several textblocks.
+
+Need to:
+- Decide on how to handle gold standard and ocr data being on different levels
+- Use real_date.txt to scrape ocr.csv of correct dark-ids
+- Draw a sample and compare to manual notation and check that data is correct (may contain small errors like wrong paragraph id)
+
+Next step:
+- FIRST Verify paragraph number discrepancies between real_date_fixed.csv and gold-standard files
+- Create algo which opens csv file, looks for paragraph number, etc...
+
+Notes:
+- Ignore editions other than 0 or 1, the other ones are due to buggs difficult to retrieve
+- Should be paragraph 29: DAGENS NYHETER 1947-10-06_upplaga-1_pagenr-11_paragraph31.csv
+
